@@ -56,7 +56,7 @@ Vous êtes alors redirigé vers la **page Dataflow**. Maintenant que nous connai
 
 3. Si vous ne l'avez pas encore ouvert, ouvrez le fichier **FAIAD.pbix** situé dans le dossier **Report** sur le **Bureau** de votre environnement de labo.
 
-4. Dans le ruban, cliquez sur **Accueil -\> Transformer les données**. Une fenêtre Power Query s'ouvre alors. Comme vous l'avez remarqué dans le labo précédent, les requêtes du volet gauche sont organisées par source de données.
+4. Dans le ruban, cliquez sur **Accueil -> Transformer les données**. Une fenêtre Power Query s'ouvre alors. Comme vous l'avez remarqué dans le labo précédent, les requêtes du volet gauche sont organisées par source de données.
 
 5. Une fenêtre Power Query s'ouvre alors. Dans le volet gauche, sous le dossier SnowflakeData, appuyez sur la touche **Ctrl** ou Maj et sélectionnez les requêtes suivantes :
 
@@ -112,7 +112,7 @@ La connexion est alors établie et vous pouvez afficher les données dans le vol
 
 6. La boîte de dialogue Choisir la cible de destination s'ouvre alors. Assurez-vous que le **bouton radio Nouvelle table** est **coché**, car nous créons une table.
 
-7. Nous souhaitons créer la table dans la lakehouse que nous avons créée plus tôt. Dans le volet gauche, accédez à **Lakehouse -\> FAIAD\_\<username\>**.
+7. Nous souhaitons créer la table dans la lakehouse que nous avons créée plus tôt. Dans le volet gauche, accédez à **Lakehouse -> FAIAD_<username\>**.
 
 8. Sélectionnez **lh_FAIAD**.
 
@@ -160,7 +160,7 @@ Vous êtes alors redirigé vers la **page Dataflow**. Maintenant que nous connai
 
 2. Si vous ne l'avez pas encore ouvert, ouvrez le fichier **FAIAD.pbix** situé dans le dossier **Report** sur le **Bureau** de votre environnement de labo.
 
-3. Dans le ruban, cliquez sur **Accueil -\> Transformer les données**. Une fenêtre Power Query s'ouvre alors. Comme vous l'avez remarqué dans le labo précédent, les requêtes du volet gauche sont organisées par source de données.
+3. Dans le ruban, cliquez sur **Accueil -> Transformer les données**. Une fenêtre Power Query s'ouvre alors. Comme vous l'avez remarqué dans le labo précédent, les requêtes du volet gauche sont organisées par source de données.
 
 4. Une fenêtre Power Query s'ouvre alors. Dans le volet gauche, sous le dossier DataverseData, appuyez sur la touche **Ctrl et sélectionnez** les requêtes suivantes :
 
@@ -210,7 +210,7 @@ La connexion est alors établie et vous pouvez afficher les données dans le vol
 
 7. La boîte de dialogue Choisir la cible de destination s'ouvre alors. Assurez-vous que le bouton radio **Nouvelle table** est coché, car nous créons une table.
 
-8. Nous souhaitons créer la table dans la lakehouse que nous avons créée plus tôt. Dans le volet gauche, accédez à **Lakehouse -\> FAIAD\_\<username\>**.
+8. Nous souhaitons créer la table dans la lakehouse que nous avons créée plus tôt. Dans le volet gauche, accédez à **Lakehouse -> FAIAD_<username\>**.
 
 9. Sélectionnez **lh_FAIAD**.
 
@@ -230,8 +230,7 @@ La connexion est alors établie et vous pouvez afficher les données dans le vol
 
 2. Dans le coin inférieur droit, cliquez sur **Publier**.
 
-**Remarque :** vous êtes alors redirigé vers l'**écran Data Factory**. 
-La publication du flux de données peut prendre quelques instants.
+**Remarque :** vous êtes alors redirigé vers l'**écran Data Factory**.  La publication du flux de données peut prendre quelques instants.
 
 3. Dataflow 1 est le flux de données dans lequel nous travaillions. Renommons-le avant de continuer. Cliquez sur les **points de suspension (...)** en regard de Dataflow 1. Sélectionnez **Propriétés**.
 
@@ -241,8 +240,7 @@ La publication du flux de données peut prendre quelques instants.
 
 6. Cliquez sur **Enregistrer**.
 
-Vous êtes alors redirigé vers l'**écran Data Factory**. Créons
-maintenant un flux de données permettant d'importer les données de
+Vous êtes alors redirigé vers l'**écran Data Factory**. Créons maintenant un flux de données permettant d'importer les données de
 SharePoint.
 
 ### Tâche 9 : copier des requêtes SharePoint dans Dataflow
@@ -253,7 +251,7 @@ Vous êtes alors redirigé vers la **page Dataflow**. Maintenant que nous connai
 
 7. Si vous ne l'avez pas encore ouvert, ouvrez le fichier **FAIAD.pbix** situé dans le dossier **Report** sur le **Bureau** de votre environnement de labo.
 
-8. Dans le ruban, cliquez sur **Accueil -\> Transformer les données**. Une fenêtre Power Query s'ouvre alors. Comme vous l'avez remarqué dans le labo précédent, les requêtes du volet gauche sont organisées par source de données.
+8. Dans le ruban, cliquez sur **Accueil -> Transformer les données**. Une fenêtre Power Query s'ouvre alors. Comme vous l'avez remarqué dans le labo précédent, les requêtes du volet gauche sont organisées par source de données.
 
 9. Une fenêtre Power Query s'ouvre alors. Dans le volet gauche, sous le dossier SharepointData, **sélectionnez** la requête **People**.
 
@@ -293,7 +291,7 @@ La connexion est alors établie et vous pouvez afficher les données dans le vol
 
 7. La boîte de dialogue Choisir la cible de destination s'ouvre alors. Assurez-vous que le bouton radio **Nouvelle table** est coché, car nous créons une table.
 
-8.  Nous souhaitons créer la table dans la lakehouse que nous avons créée plus tôt. Dans le volet gauche, accédez à **Lakehouse -\> FAIAD\_\<username\>**.
+8. Nous souhaitons créer la table dans la lakehouse que nous avons créée plus tôt. Dans le volet gauche, accédez à **Lakehouse -> FAIAD_<username\>**.
 
 9. Sélectionnez **lh_FAIAD**.
 
@@ -309,17 +307,14 @@ La connexion est alors établie et vous pouvez afficher les données dans le vol
 
 ### Tâche 12 : publier et renommer le flux de données SharePoint
 
-1.  Vous êtes redirigé vers la **fenêtre Power Query**. Dans le **coin inférieur droit**, notez que la liste déroulante Destination des données est définie sur **Lakehouse**.
+1. Vous êtes redirigé vers la **fenêtre Power Query**. Dans le **coin inférieur droit**, notez que la liste déroulante Destination des données est définie sur **Lakehouse**.
 
-2.  Dans le coin inférieur droit, cliquez sur **Publier**.
+2. Dans le coin inférieur droit, cliquez sur **Publier**.
 
 **Remarque :** vous êtes alors redirigé vers l'**écran Data Factory**.
 La publication du flux de données peut prendre quelques instants.
 
-3.  Dataflow 1 est le flux de données dans lequel nous travaillions.
-    Renommons-le avant de continuer. Cliquez sur les **points de
-    suspension (...)** en regard de Dataflow 1. Sélectionnez
-    **Propriétés**.
+3. Dataflow 1 est le flux de données dans lequel nous travaillions. Renommons-le avant de continuer. Cliquez sur les **points de suspension (...)** en regard de Dataflow 1. Sélectionnez **Propriétés**.
 
 4.  La boîte de dialogue Propriétés du flux de données s'ouvre alors. Redéfinissez le champ **Nom** sur **df_People_SharePoint**.
 
@@ -389,5 +384,6 @@ CETTE DÉMONSTRATION/CES TRAVAUX PRATIQUES FOURNISSENT CERTAINES FONCTIONNALITÉ
 MICROSOFT CORPORATION DÉCLINE TOUTES LES GARANTIES ET CONDITIONS EN CE QUI CONCERNE CETTE DÉMONSTRATION/CES TRAVAUX PRATIQUES, Y COMPRIS TOUTES LES GARANTIES ET CONDITIONS DE QUALITÉ MARCHANDE, QU'ELLES SOIENT EXPLICITES, IMPLICITES OU LÉGALES, D'ADÉQUATION À UN USAGE PARTICULIER, DE TITRE ET D'ABSENCE DE CONTREFAÇON. MICROSOFT N'OFFRE AUCUNE GARANTIE OU REPRÉSENTATION EN CE QUI CONCERNE LA PRÉCISION DES RÉSULTATS, LA CONSÉQUENCE QUI DÉCOULE DE L'UTILISATION DE CETTE DÉMONSTRATION/CES ATELIERS, OU L'ADÉQUATION DES INFORMATIONS CONTENUES DANS CETTE DÉMONSTRATION/CES ATELIERS À QUELQUE FIN QUE CE SOIT.
 
 **CLAUSE D'EXCLUSION DE RESPONSABILITÉ**
+
 Cette démonstration/Ce labo comporte seulement une partie des nouvelles fonctionnalités et améliorations disponibles dans Microsoft Power BI. Certaines fonctionnalités sont susceptibles de changer dans les versions ultérieures du produit. Dans ce labo/cette démonstration, vous allez découvrir comment utiliser certaines nouvelles fonctionnalités, mais pas toutes.
 
