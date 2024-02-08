@@ -1,4 +1,3 @@
-> Microsoft Fabric
 # Sommaire 
 
 - Introduction 
