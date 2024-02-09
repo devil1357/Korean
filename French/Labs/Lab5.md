@@ -24,11 +24,11 @@ Introduction
 
     - Tâche 9 : configurer l'activité Flux de données
 
-    - Tâche 10 : configurer une 1^re^ activité Définir une variable
+    - Tâche 10 : configurer une 1re activité Définir une variable
 
-    - Tâche 11 : configurer une 2^e^ activité Définir une variable
+    - Tâche 11 : configurer une 2e activité Définir une variable
 
-    - Tâche 12 : configurer une 3^e^ activité Définir une variable
+    - Tâche 12 : configurer une 3e activité Définir une variable
 
     - Tâche 13 : configurer l'activité Attendre
 
@@ -215,7 +215,7 @@ Ajoutons un peu plus de complexité à notre scénario. Nous avons remarqué que
 
 3. Dans la liste des activités, cliquez sur **Until**.
 
-**Until** : activité permettant d'itérer jusqu'à ce qu'une condition soit remplie.
+   **Until** : activité permettant d'itérer jusqu'à ce qu'une condition soit remplie.
 
 Dans notre scénario, nous allons itérer et actualiser le flux de données jusqu'à ce qu'il réussisse ou nous effectuons trois tentatives.
 
@@ -283,13 +283,13 @@ Nous devons écrire une expression qui s'exécute jusqu'à ce que la valeur de *
 
 10. Dans la section **Logical Fonctions**, sélectionnez la fonction **or**. Notez que la mention **@or()** est ajoutée à la zone de texte de l'expression dynamique. La fonction or utilise deux paramètres et nous travaillons sur le premier.
 
-11. Placez le curseur **entre les parenthèses** de la fonction **\@or**.
+11. Placez le curseur **entre les parenthèses** de la fonction **@or**.
 
 12. Dans la section **Logical Fonctions**, sélectionnez la fonction **equals**. Notez que cette mention est ajoutée à la zone de texte de l'expression dynamique.
 
 **Remarque :** votre fonction devrait ressembler à **@or(equals())**. La fonction equals utilise également trois paramètres. Nous allons vérifier si la variable varCounter est égale à 3.
 
-13. À présent, placez le curseur **entre les parenthèses** de la fonction **\@equals** pour ajouter les paramètres.
+13. À présent, placez le curseur **entre les parenthèses** de la fonction **@equals** pour ajouter les paramètres.
 
 14. Dans le menu inférieur, cliquez sur **Variables**.
 
@@ -311,7 +311,7 @@ Nous devons écrire une expression qui s'exécute jusqu'à ce que la valeur de *
 
 23. Votre expression devrait être :
 
-**@or(equals(variables('varCounter'),3),equals(variables('varIsSuccess'), variables('varSuccess')))**
+    **@or(equals(variables('varCounter'),3),equals(variables('varIsSuccess'), variables('varSuccess')))**
 
 24. Cliquez sur **OK**.
 
@@ -335,9 +335,9 @@ Nous devons écrire une expression qui s'exécute jusqu'à ce que la valeur de *
 
 9. Dans la **liste déroulante Flux de données**, sélectionnez **df_People_SharePoint**. Lorsque cette activité Flux de données est exécutée, elle va actualiser **df_People_SharePoint**.
 
-### Tâche 10 : configurer une 1^re^ activité Définir une variable
+### Tâche 10 : configurer une 1re activité Définir une variable
 
-Nous avons configuré l'activité Flux de données comme nous l'avons fait plus tôt dans le labo. Nous allons maintenant ajouter une nouvelle logique. Si l'actualisation du flux de données réussit, nous devons quitter l'itérateur Until. N'oubliez pas que l'une des conditions pour quitter l'itérateur consiste à définir la valeur de la variable varIsSuccess sur Oui.
+Nous avons configuré l’activité Flux de données comme nous l’avons fait plus tôt dans le labo. Nous allons maintenant ajouter une nouvelle logique. Si l’actualisation du flux de données réussit, nous devons quitter l’itérateur Until. N’oubliez pas que l’une des conditions pour quitter l’itérateur consiste à définir la valeur de la variable varIsSuccess sur Oui.
 
 1. Dans le menu supérieur, cliquez sur **Activités -> Définir une variable**. L'activité Définir une variable est alors ajoutée au canevas de conception.
 
@@ -369,13 +369,13 @@ d. L'icône représentant une **flèche droite bleue** est utilisée à la fin d
 
 10. La boîte de dialogue Générateur d'expressions de pipeline s'ouvre alors. Cliquez sur la zone de texte **Ajoutez du contenu dynamique ci-dessous en utilisant n'importe quelle combinaison d'expressions, de fonctions et de variables système.**
 
-11. Dans le menu inférieur, cliquez sur **Variables -> varSuccess**. Notez que la mention \@variables(\'varSuccess\') est saisie dans la zone de texte Ajoutez du contenu dynamique ci-dessous. N'oubliez pas que lorsque nous avons créé des variables, nous avions prédéfini la valeur de la variable varSuccess sur Oui. Nous attribuons donc la valeur Oui à la variable varIsSuccess.
+11. Dans le menu inférieur, cliquez sur **Variables -> varSuccess**. Notez que la mention @variables('varSuccess') est saisie dans la zone de texte Ajoutez du contenu dynamique ci-dessous. N'oubliez pas que lorsque nous avons créé des variables, nous avions prédéfini la valeur de la variable varSuccess sur Oui. Nous attribuons donc la valeur Oui à la variable varIsSuccess.
 
 12. Cliquez sur **OK**. Vous êtes alors redirigé vers le **volet de conception de l'itérateur**.
 
 Nous devons maintenant définir le compteur si l'activité Flux de données échoue. Dans le pipeline de données, nous ne pouvons pas auto-référencer une variable. Autrement dit, nous ne pouvons pas incrémenter la variable de compteur varCounter en ajoutant un à sa valeur (varCounter = varCounter + 1). Nous utilisons donc la variable varTempCounter.
 
-### Tâche 11 : configurer une 2^e^ activité Définir une variable
+### Tâche 11 : configurer une 2e activité Définir une variable
 
 1. Dans le menu supérieur, cliquez sur **Activités -> Définir une variable**. L'activité Définir une variable est alors ajoutée au canevas de conception.
 
@@ -402,7 +402,7 @@ Nous devons maintenant définir le compteur si l'activité Flux de données éch
 
 Nous devons maintenant définir la valeur de la variable varCounter sur la valeur de varTempCounter.
 
-### Tâche 12 : configurer une 3^e^ activité Définir une variable
+### Tâche 12 : configurer une 3e activité Définir une variable
 
 1. Dans le menu supérieur, cliquez sur **Activités -> Définir une variable**. L'activité Définir une variable est alors ajoutée au canevas de conception.
 
