@@ -347,15 +347,15 @@ Nous avons configuré l’activité Flux de données comme nous l’avons fait p
 
 4. Dans le champ **Description**, saisissez **Set variable varIsSuccess to Yes**.
 
-**Remarque :** survolez l'**activité Flux de données**. À droite de la zone de l'activité se trouvent quatre icônes. Elles permettent de se connecter à l'activité suivante en fonction du résultat de l'activité :
+    **Remarque :** survolez l'**activité Flux de données**. À droite de la zone de l'activité se trouvent quatre icônes. Elles permettent de se connecter à l'activité suivante en fonction du résultat de l'activité :
 
-a. L'icône représentant une **flèche incurvée grise** permet d'ignorer l'activité.
+    - L'icône représentant une **flèche incurvée grise** permet d'ignorer l'activité.
 
-b. L'icône représentant une **coche verte** est utilisée en cas de réussite de l'activité.
+    - L'icône représentant une **coche verte** est utilisée en cas de réussite de l'activité.
 
-c. L'icône représentant une **croix rouge** est utilisée en cas d'échec de l'activité.
+    - L'icône représentant une **croix rouge** est utilisée en cas d'échec de l'activité.
 
-d. L'icône représentant une **flèche droite bleue** est utilisée à la fin de l'activité.
+    - L'icône représentant une **flèche droite bleue** est utilisée à la fin de l'activité.
 
 5. Cliquez sur la **coche verte** de l'activité Flux de données dfactivity_People_SharePoint et faites-la glisser pour vous connecter à la nouvelle **activité Définir une variable** **set_varIsSuccess**. Ainsi, en cas de succès de l'actualisation du flux de données, nous souhaitons exécuter l'activité Définir une variable.
 
